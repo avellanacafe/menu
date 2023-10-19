@@ -1,9 +1,10 @@
 .App {
   text-align: center;
   min-height: 100vh;
-  background-image: url(./imgs/bg.png);
+  background-image: url(./imgs/bg.jpg);
   background-position-x: 50%;
   background-size: auto 100vh;
+  background-repeat: no-repeat;
   display: flex;
   align-items: center;
 }
@@ -21,11 +22,17 @@
 
 .banner {
   width: 100%;
+  text-align: center;
+  background-color: #ffffff;
+}
+
+.banner img {
+  width: 40%;
 }
 
 .m-button {
   border: 0px;
-  color: #71b8bd;
+  color: #666666;
   font-weight: 500;
   background: #ffffff;
   padding: 12px 20px;

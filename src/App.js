@@ -40,7 +40,9 @@ function App() {
   return (
     <div className="App">
       <div className={`main ${(!showSpanish && !showEnglish) ? 'main-v' : ''}`}>
-        <img src={banner} alt="avellana-cafe" className="banner" />
+        <div className="banner">
+          <img src={banner} alt="avellana-cafe" />
+        </div>
         <button className="m-button es" onClick={spanishMenuClicked}>MENÚ ESPAÑOL</button>
         <button className="m-button en" onClick={englishMenuClicked}>ENGLISH MENU</button>
         <div className="m-space"></div>
