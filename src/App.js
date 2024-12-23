@@ -38,26 +38,30 @@ function App() {
   };
 
   return (
-    <div className="App">
-      <div className={`main ${(!showSpanish && !showEnglish) ? 'main-v' : ''}`}>
-        <div className="banner">
-          <img src={banner} alt="avellana-cafe" />
-        </div>
-        <button className="m-button es" onClick={spanishMenuClicked}>MENÚ ESPAÑOL</button>
-        <button className="m-button en" onClick={englishMenuClicked}>ENGLISH MENU</button>
-        <div className="m-space"></div>
-      </div>
+    <p>Estamos realizando trabajos de mantenimiento.. Gracias por su comprensión.</p>
+    );
 
-      <div className="menu-scroller">
-        <div className='spanish'>
-          <img src={spanish} alt="menu-spanish" className={`menu-image ${showSpanish ? 'menu-image-v' : ''}`} />
-        </div>
-        <div className='english'>
-          <img src={english} alt="menu-english" className={`menu-image ${showEnglish ? 'menu-image-v' : ''}`} />
-        </div>
-      </div>
-    </div>
-  );
+  // return (
+  //   <div className="App">
+  //     <div className={`main ${(!showSpanish && !showEnglish) ? 'main-v' : ''}`}>
+  //       <div className="banner">
+  //         <img src={banner} alt="avellana-cafe" />
+  //       </div>
+  //       <button className="m-button es" onClick={spanishMenuClicked}>MENÚ ESPAÑOL</button>
+  //       <button className="m-button en" onClick={englishMenuClicked}>ENGLISH MENU</button>
+  //       <div className="m-space"></div>
+  //     </div>
+
+  //     <div className="menu-scroller">
+  //       <div className='spanish'>
+  //         <img src={spanish} alt="menu-spanish" className={`menu-image ${showSpanish ? 'menu-image-v' : ''}`} />
+  //       </div>
+  //       <div className='english'>
+  //         <img src={english} alt="menu-english" className={`menu-image ${showEnglish ? 'menu-image-v' : ''}`} />
+  //       </div>
+  //     </div>
+  //   </div>
+  // );
 }
 
 export default App;
